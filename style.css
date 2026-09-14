@@ -333,16 +333,13 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 900px) {
   .header {
     display: none !important;
   }
   
   body {
     background-color: #000000 !important;
-    overflow: hidden;
-    padding: 0 !important;
-    margin: 0 !important;
   }
   
   .phone {
@@ -358,7 +355,6 @@ body {
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
-    background-color: #000000 !important;
   }
   
   #phone-screen {
