@@ -32,9 +32,14 @@ body {
   border-radius: 18px;
   color: #080808;
   width: 200px;
-  height: 350px;
+  height: auto !important;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
+
 
 .logo {
   background-color: black;
