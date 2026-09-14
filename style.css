@@ -325,3 +325,28 @@ body {
 .message-app, .quick-app, #setting, #jobs, .serv-app, #email_App, #browser, #camera {
   display: none !important;
 }
+
+@media (max-width: 480px) {
+  .header {
+    display: none !important;
+  }
+  
+  body {
+    background-color: #000000 !important;
+  }
+  
+  .phone {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+  
+  #phone-screen {
+    height: calc(100vh - 95px) !important;
+  }
+}
