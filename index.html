@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gta - Phone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/57b65d1d2a.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h1>GTA V Phone. <a href="https://github.com/Dev-CasperTheGhost/gta-phone">Source Code</a> </h1>
+    </header>
+
+    <div id="phone">
+      <div class="phone">
+                <div class="phone-outside" style="padding: 0; background: black; height: 25px; width: 100%;">
+          <img src="ui/top_bar.png" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        
+        <div class="line"><h1 id="changer" >Welcome</h1></div>
+        
+        <div id="phone-screen">
+          
+          <div id="home-apps">
+            <div id="line1" class="line1">
+              <button onclick="email()"><img src="ui/mail icon.png"></button>
+              <button onclick="messages()"><img src="ui/messages icon.png"></button>
+              <button onclick="Contacts()"><img src="ui/contacts iocn.png"></button>
+            </div>
+            <div id="line2" class="line2">
+              <button onclick="qjob()"><img src="ui/copy àste icon.PNG"></button>
+              <button onclick="Jobs()"><img src="ui/save icon.PNG"></button>
+              <button onclick="settings()"><img src="ui/settings icon.png"></button>
+            </div>
+            <div id="line3" class="line3">
+              <button onclick="camera()"><img src="ui/snapmatic icon.jfif"></button>
+              <button onclick="webbrowser()"><img src="ui/internet icon.png"></button>
+              <button onclick="Serve()"><img src="ui/serv.PNG"></button>
+            </div>
+          </div>
+
+          <div id="camera">
+            <div id="grid">
+              <div id="line-v-1"></div>
+              <div id="line-v-2"></div>
+              <div id="line-v-3"></div>
+              <div id="line-v-4"></div>
+              <div id="line"></div>
+              <div id="line"></div>
+              <div id="line"></div>
+              <div id="line"></div>
+            </div>          
+          </div>
+
+          <div id="messApp" class="message-app">
+            <div class="message">
+              <h6>&bullet; Maude</h6>
+              <div class="cc">Hello stranger! I interes...</div>
+            </div>
+            <div class="message">
+              <h6>&bullet; Simeon</h6>
+              <div class="cc">Grab these vehicles: K...</div>
+            </div>
+            <div class="message">
+              <h6>&bullet; Lester</h6>
+              <div class="cc">If the goverment falls a...</div>
+            </div>
+            <div class="message">
+              <h6>&bullet; Tony</h6>
+              <div class="cc">You want to be a club o...</div>
+            </div>
+            <div class="message">
+              <h6>&bullet; Unknown</h6>
+              <div class="cc">Watch out, someone ha...</div>
+            </div>
+          </div>
+
+                <div id="conApp">
+        <div class="contact">
+          <img src="ui/lester_avatar.PNG" class="contact-avatar">
+          <span>Lester</span>
+        </div>
+        <div class="contact">
+          <img src="ui/franklin_avatar.PNG" class="contact-avatar">
+          <span>Franklin</span>
+        </div>
+        <div class="contact">
+          <img src="ui/micheal_avatar.PNG" class="contact-avatar">
+          <span>Michael</span>
+        </div>
+        <div class="contact">
+          <img src="ui/lamar_avatar.PNG" class="contact-avatar">
+          <span>Lamar</span>
+        </div>
+        <div class="contact">
+          <img src="ui/trevor_avatar.PNG" class="contact-avatar">
+          <span>Trevor</span>
+        </div>
+      </div>
+        
+      <div id="calling-screen">
+        <div class="call-header">
+          <img id="call-avatar" src="ui/lester_avatar.PNG">
+          <div class="call-info">
+            <h4 id="call-name">Lester</h4>
+            <h5 id="call-status">DIALING...</h5>
+          </div>
+        </div>
+        <div class="call-body">
+                        <img src="ui/ifruit_logo.png" class="big-ifruit-logo">
+        </div>
+        <div class="call-footer">
+          <button class="hangup-btn" onclick="home()"><i class="fas fa-phone-slash"></i></button>
+        </div>
+      </div>
+
+
+          <div id="qapp" class="quick-app">
+            <div class="quick">
+              <h6>Play Heist</h6>
+            </div>
+            <div class="quick">
+              <h6>Play Adversary Mode</h6>
+            </div>
+            <div class="quick">
+              <h6>Play Random</h6>
+            </div>
+            <div class="quick">
+              <h6>Play Race</h6>
+            </div>
+            <div class="quick">
+              <h6>Play Stunt Race</h6>
+            </div>
+            <div class="quick">
+              <h6>Play Deathmatch</h6>
+            </div>
+          </div>
+  
+          <div id="setting">
+            <button id="color" onclick="color()">Colors</button>
+            <button id="ringtones" onclick="ringtones()">Ringtones</button> 
+
+            <div id="settings-color">
+              <button onclick="red()" id="setttings-b">background color red</button><br>
+              <button onclick="blue()" id="setttings-b">background color blue</button><br>
+              <button onclick="green()" id="setttings-b">background color green</button><br>
+              <br><br><br>
+            </div>
+            
+            <div id="settings-ringtones">
+              <button onclick="ring1()"id="setttings-b">Ringtone 1</button><br>
+              <button onclick="ring2()"id="setttings-b">Ringtone 2</button><br>
+              <button onclick="ring3()"id="setttings-b">Ringtone 3</button><br>
+              <br><br><br>
+            </div>
+          </div>
+
+          <div id="serv" class="serv-app">
+            <div class="securo">
+              <h6>No VIP Invites</h6>
+              <br><br>
+            </div>
+          </div>
+
+          <div id="jobs" >
+            <div id="job">
+              <h6>&bullet; Martin</h6>
+              <p>Invite from death from a...<br>(1-4 Players)</p> 
+            </div>
+            <div id="job">
+              <h6>&bullet; Lamar</h6>
+              <p>Invite to lost MC RIP... <br>(1-2 Players)</p>
+            </div>
+            <div id="job">
+              <h6>&bullet; Lester</h6>
+              <p>Invite to Hack and Dash... <br> (1-4 Players)</p>
+            </div>
+            <br>
+          </div>
+          
+          <div id="email_App">
+            <h5>rockstar@social.com</h5>
+          </div>
+          
+          <div id="browser">
+            In development
+          </div>
+          
+        </div>
+
+                        <div id="app-nav-bar" onclick="home()" style="height: 30px; width: 100%; padding: 0; background: #1c1c1c; cursor: pointer; overflow: hidden;">
+          <img src="ui/arrows.PNG" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+                        <div id="phone-bottom" onclick="home()" style="height: 35px; width: 100%; padding: 0; background: black; cursor: pointer; overflow: hidden;">
+          <img src="ui/bottom_bar2.png" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+
+
+

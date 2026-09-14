@@ -1,0 +1,435 @@
+:root {
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: gray;
+  font-family: sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+
+.header a {
+  color: #27299c;
+  text-decoration: none;
+}
+
+.phone {
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid;
+  border-radius: 18px;
+  color: #080808;
+  width: 200px;
+  height: 350px;
+  background-color: black;
+}
+
+.logo {
+  background-color: black;
+  margin: 0;
+}
+
+.phone-outside h3 {
+  color: white;
+  margin: 6px;
+  text-align: center;
+  align-items: center;
+}
+
+.time h5 {
+  color: white;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+}
+
+#phone-screen {
+  background-image: url('ui/ifruit_font.PNG') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 195px !important;
+  padding: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative !important;
+}
+
+
+.line {
+  background-color: #8aa5af;
+  margin-top: 2px;
+  padding: 1px;
+  text-align: center;
+}
+
+.line h1 {
+  align-items: center;
+  font-size: 14px;
+  margin: 0;
+  color: black;
+}
+
+button {
+  margin: 0 !important;
+  cursor: pointer;
+  border: none;
+  width: 38px !important;
+  height: 38px !important;
+  background: transparent !important;
+  padding: 0 !important;
+  display: inline-block;
+}
+
+button img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  border-radius: 4px !important;
+}
+
+#phone-bottom {
+  color: white;
+  margin-top: 17px;
+  cursor: pointer;
+  z-index: 15000;
+}
+
+#phone-bottom > i {
+  margin-left: 38px;
+}
+
+#home-apps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 15px 12px 0 12px;
+  box-sizing: border-box;
+}
+
+.line1, .line2, .line3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#conApp {
+  background-color: #ffffff !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 100 !important;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: none !important;
+}
+
+.contact {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d0d0d0;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.contact h5 {
+  color: #000000 !important;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.contact h5 i {
+  color: #555555;
+  margin-right: 8px;
+}
+
+.contact:hover {
+  background-color: #2979ff !important;
+}
+
+.contact:hover h5, 
+.contact:hover h5 i {
+  color: #ffffff !important;
+}
+
+#app-nav-bar {
+  background-color: #1c1c1c;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #333;
+  width: 100%;
+}
+
+.nav-action-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-plus {
+  color: #39b54a;
+}
+
+.red-back {
+  color: #ff3b30;
+}
+
+.contact-avatar {
+  width: 33px !important;
+  height: 33px !important;
+  object-fit: cover !important;
+}
+
+#conApp {
+  overflow-y: hidden !important;
+}
+
+#conApp {
+  overflow-y: auto !important;
+}
+
+#conApp::-webkit-scrollbar {
+  width: 4px !important;
+}
+
+#conApp::-webkit-scrollbar-track {
+  background: #ffffff !important;
+}
+
+#conApp::-webkit-scrollbar-thumb {
+  background: #333333 !important;
+  border-radius: 2px !important;
+}
+
+#calling-screen {
+  background-color: #0c0c0c !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 200 !important;
+  display: none;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.call-header {
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #222;
+}
+
+#call-avatar {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border: 1px solid #444;
+}
+
+.call-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#call-name {
+  color: #ffffff !important;
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#call-status {
+  color: #aaaaaa !important;
+  margin: 2px 0 0 0;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.call-body {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.call-body i {
+  color: #0c0c0c;
+  font-size: 65px;
+}
+
+.call-footer {
+  background-color: #1c1c1c;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.hangup-btn {
+  background: transparent !important;
+  border: none;
+  width: auto !important;
+  height: auto !important;
+}
+
+.hangup-btn i {
+  color: #ff3b30;
+  font-size: 16px;
+  transform: rotate(135deg);
+}
+
+.message-app, .quick-app, #setting, #jobs, .serv-app, #email_App, #browser, #camera, #calling-screen {
+  display: none !important;
+}
+
+#phone-bottom {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  padding: 0 10px !important;
+}
+
+#phone-bottom i {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+}
+
+#app-nav-bar i {
+  font-size: 14px !important;
+}
+
+#phone-bottom {
+  overflow: hidden !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#phone-bottom img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+#phone-screen {
+  height: 185px !important;
+}
+
+#app-nav-bar img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+#phone-bottom {
+  background-color: #000000 !important;
+}
+
+#phone-bottom img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  background-color: #000000 !important;
+}
+
+#app-nav-bar {
+  background-color: #000000 !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#app-nav-bar img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: fill !important;
+}
+
+#phone-bottom {
+  background: #000000 !important;
+}
+
+#phone-bottom img {
+  mix-blend-mode: screen !important;
+}
+
+.call-body {
+  background: linear-gradient(to bottom, #2c2c2c, #1a1a1a) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  overflow: visible !important;
+  flex-grow: 1 !important;
+}
+
+
+
+#calling-screen {
+  height: 185px !important;
+  display: none !important;
+  flex-direction: column !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 200 !important;
+  overflow: visible !important;
+}
+
+
+.big-ifruit-logo {
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: contain !important;
+  mix-blend-mode: multiply !important;
+  filter: contrast(1.2) !important;
+  margin-top: 5px !important;
+}
+
+
+#calling-screen[style*="flex"] {
+  display: flex !important;
+}
+
