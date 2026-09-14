@@ -326,6 +326,13 @@ body {
   display: none !important;
 }
 
+
+
+  #app-nav-bar img, #phone-bottom img {
+    object-fit: contain !important;
+  }
+}
+
 @media (max-width: 900px) {
   .header {
     display: none !important;
@@ -395,16 +402,31 @@ body {
     min-height: 45px !important;
     width: 100% !important;
     z-index: 999 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    padding-bottom: 5px !important;
+    box-sizing: border-box !important;
   }
 
   #phone-bottom {
-    height: 55px !important;
-    min-height: 55px !important;
+    height: 65px !important;
+    min-height: 65px !important;
     width: 100% !important;
     z-index: 999 !important;
+    padding-bottom: 15px !important;
+    box-sizing: border-box !important;
   }
 
-  #app-nav-bar img, #phone-bottom img {
+  #app-nav-bar img {
     object-fit: contain !important;
+    max-height: 85% !important;
+    width: auto !important;
+  }
+
+  #phone-bottom img {
+    object-fit: contain !important;
+    max-height: 85% !important;
+    width: auto !important;
   }
 }
