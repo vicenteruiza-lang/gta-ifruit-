@@ -1,5 +1,5 @@
 let currentAudio = null;
-let ringtoneAudio = new Audio('audio/gta_5 ringonte.mp3');
+let ringtoneAudio = new Audio('audio/gta_5 ringtone.mp3');
 
 function Contacts() {
   document.getElementById('home-apps').style.display = 'none';
