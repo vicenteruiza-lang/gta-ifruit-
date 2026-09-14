@@ -333,6 +333,7 @@ body {
   
   body {
     background-color: #000000 !important;
+    overflow: hidden;
   }
   
   .phone {
@@ -344,9 +345,66 @@ body {
     height: 100vh !important;
     border: none !important;
     border-radius: 0 !important;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
   }
   
   #phone-screen {
-    height: calc(100vh - 95px) !important;
+    flex-grow: 1 !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+    padding: 0 !important;
+  }
+
+  #home-apps {
+    gap: 35px !important;
+    padding: 30px 20px 0 20px !important;
+    flex-grow: 1 !important;
+    justify-content: flex-start !important;
+  }
+
+  #home-apps button {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  #conApp {
+    padding-top: 5px !important;
+  }
+
+  .contact {
+    padding: 15px 18px !important;
+    gap: 15px !important;
+  }
+
+  .contact h5 {
+    font-size: 18px !important;
+  }
+
+  .contact-avatar {
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  #app-nav-bar {
+    height: 45px !important;
+    min-height: 45px !important;
+    width: 100% !important;
+    z-index: 999 !important;
+  }
+
+  #phone-bottom {
+    height: 55px !important;
+    min-height: 55px !important;
+    width: 100% !important;
+    z-index: 999 !important;
+  }
+
+  #app-nav-bar img, #phone-bottom img {
+    object-fit: contain !important;
   }
 }
