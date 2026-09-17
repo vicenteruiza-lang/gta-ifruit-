@@ -68,18 +68,23 @@ body {
 }
 
 .line {
-  background-color: #8aa5af;
+  background: linear-gradient(to bottom, #758da4 0%, #758da4 50%, #4f637a 50%, #4f637a 100%) !important;
   margin-top: 0;
-  padding: 2px;
+  padding: 4px 0; 
   text-align: center;
+  box-shadow: inset 0 -1px 0px rgba(0,0,0,0.3); 
 }
 
 .line h1 {
-  font-size: 12px;
+  font-size: 13px;
   margin: 0;
-  color: black;
-  font-weight: bold;
+  color: #ffffff !important; 
+  font-weight: normal;       
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); 
 }
+
 
 #phone-screen {
   background-image: url('ui/ifruit_font.PNG') !important;
